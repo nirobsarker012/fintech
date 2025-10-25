@@ -1,10 +1,11 @@
 import Hero from "./components/Hero/Hero";
 import Navbar from "./components/Navbar/Navbar";
+import Payments from "./components/payment/Payments";
 
 export default function Home() {
   return (
     <>
-      <div className="bg-[url('/images/banner-bg.png')] bg-center bg-no-repeat bg-cover m-6 rounded-2xl">
+      <div className="bg-[url('/images/banner-bg.png')] bg-center bg-no-repeat bg-cover m-4 rounded-2xl overflow-hidden">
         {/* Header Sections start */}
         <Navbar />
         {/* Header Sections End */}
@@ -12,6 +13,9 @@ export default function Home() {
         <Hero />
         {/* Hero section End */}
       </div>
+      {/* Payment Sections start */}
+      <Payments />
+      {/* Payment Sections end */}
     </>
   );
 }
