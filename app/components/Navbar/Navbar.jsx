@@ -1,16 +1,24 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
+import { FiMenu, FiX } from "react-icons/fi";
 import NavbarMenu from "./NavbarMenu";
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <header>
-      <nav className="container flex justify-between items-center">
+      <nav className="container mx-auto flex justify-between items-center py-4 px-4 md:px-8">
         {/* Logo */}
-        <Link className="flex items-center" href={"/"}>
+        <Link className="flex items-center gap-2" href={"/"}>
           <Image
-            className=""
             width={80}
             height={73}
             alt="fintech_logo"
@@ -21,15 +29,39 @@ const Navbar = () => {
           </span>
         </Link>
         {/* Logo End */}
-        {/* Nabmenus */}
-        <NavbarMenu />
-        {/* Nabmenus */}
-        {/* NavBtn */}
-        <button className="bg-btn-primary-color text text-white font-semibold text-[16px] py-3 px-6 rounded-4xl cursor-pointer hover:bg-black hover:text-white transition-all duration-500">
+
+        {/* Desktop Menu */}
+        <div className="hidden md:flex">
+          <NavbarMenu />
+        </div>
+
+        {/* Contact Button (Desktop Only) */}
+        <button className="hidden md:block bg-btn-primary-color text-white font-semibold text-[16px] py-3 px-6 rounded-4xl cursor-pointer hover:bg-black hover:text-white transition-all duration-500">
           Contact Us
         </button>
-        {/* NavBtn End */}
+
+        {/* Mobile Menu Icon */}
+        <div className="md:hidden flex items-center">
+          <button
+            onClick={toggleMenu}
+            className="text-3xl text-primary focus:outline-none"
+          >
+            {isOpen ? <FiX /> : <FiMenu />}
+          </button>
+        </div>
       </nav>
+
+      {/* Mobile Dropdown Menu */}
+      {isOpen && (
+        <div className="md:hidden bg-white shadow-lg border-t border-gray-200">
+          <div className="flex flex-col items-center py-4 space-y-4">
+            <NavbarMenu />
+            <button className="bg-btn-primary-color text-white font-semibold text-[16px] py-2 px-6 rounded-4xl cursor-pointer hover:bg-black hover:text-white transition-all duration-500">
+              Contact Us
+            </button>
+          </div>
+        </div>
+      )}
     </header>
   );
 };
