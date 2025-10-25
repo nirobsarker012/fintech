@@ -1,4 +1,5 @@
 import Hero from "./components/Hero/Hero";
+import OnMarques from "./components/marquee/OnMarques";
 import Navbar from "./components/Navbar/Navbar";
 import Payments from "./components/payment/Payments";
 
@@ -16,6 +17,8 @@ export default function Home() {
       {/* Payment Sections start */}
       <Payments />
       {/* Payment Sections end */}
+      {/* Partner Image  */}
+      <OnMarques />
     </>
   );
 }

@@ -49,8 +49,32 @@ const paymentData = [
   },
 ];
 
+// Partner Image
+const partnerImages = [
+  {
+    id: 1,
+    img: "/images/logo-1.png",
+  },
+  {
+    id: 2,
+    img: "/images/logo-2.png",
+  },
+  {
+    id: 3,
+    img: "/images/logo-3.png",
+  },
+  {
+    id: 4,
+    img: "/images/logo-4.png",
+  },
+  {
+    id: 5,
+    img: "/images/logo-5.png",
+  },
+];
+
 const useData = () => {
-  return { menu, paymentData };
+  return { menu, paymentData, partnerImages };
 };
 
 export default useData;
