@@ -15,7 +15,7 @@ const Navbar = () => {
 
   return (
     <header>
-      <nav className="container mx-auto flex justify-between items-center py-4 px-4 md:px-8">
+      <nav className="container flex justify-between items-center py-4">
         {/* Logo */}
         <Link className="flex items-center gap-2" href={"/"}>
           <Image

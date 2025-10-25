@@ -20,6 +20,8 @@
   --color-dark-shades: #f3f3f3;
   --color-btn-primary-color: #2e68fd;
   --color-white: #ffffff;
+  --color-gray: #787878;
+  --color-badge: #37c390;
 }
 
 @media (prefers-color-scheme: dark) {
