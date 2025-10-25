@@ -17,7 +17,7 @@ const MarqueeBox = () => {
             height={40}
             alt="partner-logo"
             className={`object-contain ${
-              index === arr.length - 1 ? "ml-5" : ""
+              index === arr.length - 1 ? "mr-10" : ""
             }`}
           />
         ))}
