@@ -25,7 +25,7 @@ const PaymentWayBox = () => {
             </div>
 
             {/* Border */}
-
+            <span style={{ background: data.borderColor }}></span>
             {/* Image bottom center */}
             <div className="absolute bottom-40 left-1/2 xl:left-1/4 transform -translate-x-1/2">
               <Image width={48} height={48} src={data.img} alt={data.title} />

@@ -1,4 +1,5 @@
 import React from "react";
+import SecurityBox from "./SecurityBox";
 
 const Security = () => {
   return (
@@ -19,6 +20,8 @@ const Security = () => {
             encryption, real-time monitoring, and multi-factor authentication.
           </p>
         </div>
+        {/* SecurityBox   */}
+        <SecurityBox />
       </div>
     </section>
   );
