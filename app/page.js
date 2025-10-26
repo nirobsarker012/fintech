@@ -2,6 +2,7 @@ import Hero from "./components/Hero/Hero";
 import OnMarques from "./components/marquee/OnMarques";
 import Navbar from "./components/Navbar/Navbar";
 import Payments from "./components/payment/Payments";
+import PaymentWay from "./components/PaymentWay/PaymentWay";
 
 export default function Home() {
   return (
@@ -19,6 +20,8 @@ export default function Home() {
       {/* Payment Sections end */}
       {/* Partner Image  */}
       <OnMarques />
+      {/* PaymentsWay */}
+      <PaymentWay />
     </>
   );
 }

@@ -7,7 +7,7 @@ const Payments = () => {
   return (
     <section className="container mt-[60px] lg:mt-[120px]">
       <div className="flex flex-col text-center items-center justify-center px-4">
-        <span className="text-gray uppercase text-[16px] font-semibold font-outfit">
+        <span className="text-secondary uppercase text-[16px] font-semibold font-outfit">
           Features
         </span>
         <h1 className="font-bold font-urbanist text-primary text-[28px] sm:text-[32px] md:text-[40px] max-w-[700px] leading-tight">
