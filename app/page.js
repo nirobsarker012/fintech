@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Payments from "./components/payment/Payments";
 import PaymentWay from "./components/PaymentWay/PaymentWay";
 import Price from "./components/Price/Price";
+import SecurePayment from "./components/SecurePayment/SecurePayment";
 import Security from "./components/Security/Security";
 
 export default function Home() {
@@ -28,6 +29,8 @@ export default function Home() {
       <Security />
       {/* Pricing Section */}
       <Price />
+      {/* Payment Secure */}
+      <SecurePayment />
     </>
   );
 }

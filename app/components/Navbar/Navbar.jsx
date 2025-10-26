@@ -56,7 +56,7 @@ const Navbar = () => {
         <div className="md:hidden bg-white shadow-lg border-t border-gray-200">
           <div className="flex flex-col items-center py-4 space-y-4">
             <NavbarMenu />
-            <button className="bg-btn-primary-color text-white font-semibold text-[16px] py-2 px-6 rounded-4xl cursor-pointer hover:bg-black hover:text-white transition-all duration-500">
+            <button className="bg-btn-primary-color text-white font-semibold text-[16px] py-2 px-6 rounded-full cursor-pointer hover:bg-black hover:text-white transition-all duration-500 block leading-[150%]">
               Contact Us
             </button>
           </div>
