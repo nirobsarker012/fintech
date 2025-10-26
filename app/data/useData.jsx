@@ -216,6 +216,43 @@ const priceCardData = [
   },
 ];
 
+// Footer Data
+const footerData = [
+  {
+    id: 1,
+    title: "Short links",
+    metaLink: [
+      {
+        link: "Features",
+      },
+      {
+        link: "How it works",
+      },
+      {
+        link: "Security",
+      },
+      {
+        link: "Testimonial",
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: "Other pages",
+    metaLink: [
+      {
+        link: "Privacy policy",
+      },
+      {
+        link: "Terms & conditions",
+      },
+      {
+        link: "404",
+      },
+    ],
+  },
+];
+
 const useData = () => {
   return {
     menu,

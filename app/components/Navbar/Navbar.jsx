@@ -22,7 +22,7 @@ const Navbar = () => {
             width={80}
             height={73}
             alt="fintech_logo"
-            src={"/images/fintechLogo.png"}
+            src={"/images/logo.png"}
           />
           <span className="font-urbanist text-primary font-bold text-[28px]">
             Easy Pay
