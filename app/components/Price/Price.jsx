@@ -1,8 +1,9 @@
 import React from "react";
+import PriceCard from "./PriceCard";
 
 const Price = () => {
   return (
-    <section>
+    <section className="container">
       <div className="flex flex-col text-center items-center justify-center px-4">
         <span className="text-secondary uppercase text-[16px] font-semibold font-outfit">
           PRICING
@@ -11,6 +12,8 @@ const Price = () => {
           Simple transparent pricing no hidden fees
         </h1>
       </div>
+      {/* Price Cards  */}
+      <PriceCard />
     </section>
   );
 };

@@ -158,7 +158,6 @@ const priceCardData = [
     title: "Free Plan",
     subTitle: "Free for personal payments.",
     amount: "0",
-    img: "/images/write.svg",
     btnText: "Get Free Plan",
     priceList: [
       {
@@ -177,7 +176,6 @@ const priceCardData = [
     title: "Advanced",
     subTitle: "Minimal fees for advanced transactions",
     amount: "19",
-    img: "/images/write.svg",
     isBg: true,
     btnText: "Get Advanced Plan",
     priceList: [
@@ -200,7 +198,6 @@ const priceCardData = [
     title: "Business",
     subTitle: "Premium business transactions",
     amount: "29",
-    img: "/images/write.svg",
     btnText: "Get Business Plan",
     priceList: [
       {

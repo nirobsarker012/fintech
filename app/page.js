@@ -9,7 +9,7 @@ import Security from "./components/Security/Security";
 export default function Home() {
   return (
     <>
-      <div className="">
+      <div className="bg-[url('/images/banner-bg.png')] bg-center bg-no-repeat bg-cover m-4 rounded-2xl overflow-hidden">
         {/* Header Sections start */}
         <Navbar />
         {/* Header Sections End */}
