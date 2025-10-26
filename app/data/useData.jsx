@@ -150,8 +150,84 @@ const securityBoxData = [
   },
 ];
 
+// Price card data
+
+const priceCardData = [
+  {
+    id: 1,
+    title: "Free Plan",
+    subTitle: "Free for personal payments.",
+    amount: "0",
+    img: "/images/write.svg",
+    btnText: "Get Free Plan",
+    priceList: [
+      {
+        title: "Up to 100 transections per month",
+      },
+      {
+        title: "Basic proud protection",
+      },
+      {
+        title: "Email support",
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: "Advanced",
+    subTitle: "Minimal fees for advanced transactions",
+    amount: "19",
+    img: "/images/write.svg",
+    isBg: true,
+    btnText: "Get Advanced Plan",
+    priceList: [
+      {
+        title: "Up to 1000 transections per month",
+      },
+      {
+        title: "Advanced proud protection",
+      },
+      {
+        title: "Detailed transaction reports",
+      },
+      {
+        title: "Priority email & chat support",
+      },
+    ],
+  },
+  {
+    id: 3,
+    title: "Business",
+    subTitle: "Premium business transactions",
+    amount: "29",
+    img: "/images/write.svg",
+    btnText: "Get Business Plan",
+    priceList: [
+      {
+        title: "Unlimited transections per month",
+      },
+      {
+        title: "Premium proud protection",
+      },
+      {
+        title: "Detailed transaction reports",
+      },
+      {
+        title: "Priority email & chat support",
+      },
+    ],
+  },
+];
+
 const useData = () => {
-  return { menu, paymentData, partnerImages, paymentwayData, securityBoxData };
+  return {
+    menu,
+    paymentData,
+    partnerImages,
+    paymentwayData,
+    securityBoxData,
+    priceCardData,
+  };
 };
 
 export default useData;
