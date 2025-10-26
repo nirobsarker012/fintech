@@ -95,10 +95,10 @@ const PriceCard = () => {
 
             {/* Plan Button */}
             <button
-              className={`w-full text-primary border border-primary group-hover:text-white group-hover:border-white hover:bg-btn-primary-color hover:border-btn-primary-color rounded-full font-outfit font-semibold text-[16px] text-center py-2 cursor-pointer transition-all duration-500 ${
+              className={`w-full text-primary border border-primary group-hover:text-white group-hover:border-white rounded-full font-outfit font-semibold text-[16px] text-center py-4 cursor-pointer transition-all duration-500 leading-normal block ${
                 data.isBg
                   ? "border-none bg-btn-primary-color text-white hover:bg-black"
-                  : ""
+                  : "hover:bg-btn-primary-color hover:border-btn-primary-color"
               }`}
             >
               {data.btnText}

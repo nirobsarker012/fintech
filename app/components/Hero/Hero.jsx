@@ -12,7 +12,7 @@ const Hero = () => {
         </span>
 
         {/* Hero Title */}
-        <h1 className="font-bold text-[36px] sm:text-[48px] md:text-[64px] leading-[120%] text-primary">
+        <h1 className="font-bold font-urbanist text-[36px] sm:text-[48px] md:text-[64px] leading-[120%] text-primary">
           Pay fast and smarter from anywhere
         </h1>
 

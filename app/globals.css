@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
 
 :root {
@@ -23,6 +22,7 @@
   --color-gray: #787878;
   --color-badge: #37c390;
   --color-secondary-bg: #f6f6f6;
+  --color-red: red;
 }
 
 @media (prefers-color-scheme: dark) {
