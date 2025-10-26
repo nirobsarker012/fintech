@@ -3,6 +3,7 @@ import OnMarques from "./components/marquee/OnMarques";
 import Navbar from "./components/Navbar/Navbar";
 import Payments from "./components/payment/Payments";
 import PaymentWay from "./components/PaymentWay/PaymentWay";
+import Security from "./components/Security/Security";
 
 export default function Home() {
   return (
@@ -22,6 +23,8 @@ export default function Home() {
       <OnMarques />
       {/* PaymentsWay */}
       <PaymentWay />
+      {/* Security */}
+      <Security />
     </>
   );
 }

@@ -104,8 +104,54 @@ const paymentwayData = [
   },
 ];
 
+// Security Box Details
+const securityBoxData = [
+  {
+    id: 1,
+    color: "#2E68FD",
+    blurColor: "#ECF0FB",
+    title: "Two-factor authentication",
+    desc: "Two-factor authentication ensures added protection by using verification steps.",
+  },
+  {
+    id: 2,
+    color: "#FEEDED",
+    blurColor: "#FC4343",
+    title: "Fraud detection and alerts",
+    desc: "Fraud detection safeguards your money, sending instant alerts for any activity.",
+  },
+  {
+    id: 3,
+    color: "#E5FCF2",
+    blurColor: "#08A965",
+    title: "Transaction notifications",
+    desc: "Instant notifications for transaction keep you informed to manage your finances.",
+  },
+  {
+    id: 4,
+    color: "#E1F1F9",
+    blurColor: "#3B7793",
+    title: "Biometric access",
+    desc: "Easily and securely log in with biometric features, and facial recognition.",
+  },
+  {
+    id: 5,
+    color: "#FAEEE2",
+    blurColor: "#D77E1B",
+    title: "End-to-end encryption",
+    desc: "By encryption, protecting your data from unauthorized access.",
+  },
+  {
+    id: 5,
+    color: "#F4EDFC",
+    blurColor: "#932EFA",
+    title: "24/7 Protection support",
+    desc: "Our dedicated team is available around the clock to help you.",
+  },
+];
+
 const useData = () => {
-  return { menu, paymentData, partnerImages, paymentwayData };
+  return { menu, paymentData, partnerImages, paymentwayData, securityBoxData };
 };
 
 export default useData;
