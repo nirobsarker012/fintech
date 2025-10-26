@@ -73,8 +73,39 @@ const partnerImages = [
   },
 ];
 
+// PaymentWay Data
+const paymentwayData = [
+  {
+    id: 1,
+    num: "01",
+    img: "/images/fi_1.svg",
+    title: "Download Easy Pay",
+    desc: "Get the Easy Pay app today from the App Store or Google Play hassle free.",
+    borderColor:
+      "linear-gradient(180deg, #F5F5F5 0%, #CBCBCB 50%, #F5F5F5 100%)",
+  },
+  {
+    id: 2,
+    num: "02",
+    img: "/images/fi_2.svg",
+    title: "Link your bank or card",
+    desc: "Easily connect your account in seconds with advanced security for peace of mind.",
+    borderColor:
+      "linear-gradient(180deg, #F5F5F5 0%, #CBCBCB 50%, #F5F5F5 100%)",
+  },
+  {
+    id: 3,
+    num: "03",
+    img: "/images/fi_3.svg",
+    title: "Start paying",
+    desc: "Easily split bills, send money to friends, and make smooth online payments instantly.",
+    borderColor:
+      "linear-gradient(180deg, #F5F5F5 0%, #CBCBCB 50%, #F5F5F5 100%)",
+  },
+];
+
 const useData = () => {
-  return { menu, paymentData, partnerImages };
+  return { menu, paymentData, partnerImages, paymentwayData };
 };
 
 export default useData;

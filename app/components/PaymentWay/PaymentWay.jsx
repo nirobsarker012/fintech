@@ -1,11 +1,12 @@
 import React from "react";
+import PaymentWayBox from "./PaymentWayBox";
 
 const PaymentWay = () => {
   return (
     <section className="bg-secondary-bg py-[60px] lg:py-30">
       <div className="container">
         {/* Payment way heading */}
-        <div className="flex justify-between items-end">
+        <div className="flex flex-col gap-y-6 lg:gap-y-0 mb-5 lg:mb-12 lg:flex-row justify-between items-start lg:items-end">
           <div>
             <span className="text-secondary uppercase text-[16px] font-semibold font-outfit">
               HOW IT WORKS
@@ -19,6 +20,8 @@ const PaymentWay = () => {
             Get Started Now
           </button>
         </div>
+        {/*Payment Way Box*/}
+        <PaymentWayBox />
       </div>
     </section>
   );
