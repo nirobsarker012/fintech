@@ -215,6 +215,41 @@ const priceCardData = [
     ],
   },
 ];
+// Testimonial Data
+const testimonialData = [
+  {
+    id: 1,
+    img: "/images/client_1.png",
+    rating: 5,
+    name: "Ethan Williams",
+    degin: "Digital Marketing Specialist",
+    desc: "Experience a payment app built on simplicity and transparency. No hidden fees, just a seamless user experience that makes every transaction easy and stress-free. Say goodbye to confusion and hello to straightforward payments.",
+  },
+  {
+    id: 2,
+    img: "/images/client_2.png",
+    rating: 4,
+    name: "Daniel Thompson",
+    degin: "Product Designer",
+    desc: "Discover a payment app focused on simplicity and transparency. Enjoy a seamless experience with no hidden fees, providing clarity and ease in every transaction. It’s designed to put you in control of your payments.",
+  },
+  {
+    id: 3,
+    rating: 5,
+    img: "/images/client_1.png",
+    name: "Ethan Williams",
+    degin: "Digital Marketing Specialist",
+    desc: "Experience a payment app built on simplicity and transparency. No hidden fees, just a seamless user experience that makes every transaction easy and stress-free. Say goodbye to confusion and hello to straightforward payments.",
+  },
+  {
+    id: 4,
+    img: "/images/client_2.png",
+    rating: 4,
+    name: "Daniel Thompson",
+    degin: "Product Designer",
+    desc: "Discover a payment app focused on simplicity and transparency. Enjoy a seamless experience with no hidden fees, providing clarity and ease in every transaction. It’s designed to put you in control of your payments.",
+  },
+];
 
 // Footer Data
 const footerShortLinksData = [
