@@ -7,6 +7,7 @@ import PaymentWay from "./components/PaymentWay/PaymentWay";
 import Price from "./components/Price/Price";
 import SecurePayment from "./components/SecurePayment/SecurePayment";
 import Security from "./components/Security/Security";
+import Testimonial from "./components/Testimonial/Testimonial";
 
 export default function Home() {
   return (
@@ -30,6 +31,8 @@ export default function Home() {
       <Security />
       {/* Pricing Section */}
       <Price />
+      {/* Testimonial Sections */}
+      <Testimonial />
       {/* Payment Secure Sections */}
       <SecurePayment />
       {/* Footer Section */}
