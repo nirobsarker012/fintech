@@ -1,5 +1,7 @@
+"use client";
 import useData from "@/app/data/useData";
 import React from "react";
+import { motion } from "motion/react";
 
 const PriceCard = () => {
   const { priceCardData } = useData();
@@ -7,8 +9,16 @@ const PriceCard = () => {
   return (
     <section className="px-4 sm:px-6 lg:px-8 py-10">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        {priceCardData.map((data) => (
-          <div
+        {priceCardData.map((data, i) => (
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{
+              duration: 1,
+              ease: "easeOut",
+              delay: 0.4 + i * 0.1,
+            }}
             key={data.id}
             className={`py-10 px-6 border border-[#E7E7E8] rounded-2xl w-full mx-auto flex flex-col justify-between hover:bg-primary text-white transition-all duration-500 group ${
               data.isBg ? "bg-primary text-white" : ""
@@ -103,7 +113,7 @@ const PriceCard = () => {
             >
               {data.btnText}
             </button>
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>

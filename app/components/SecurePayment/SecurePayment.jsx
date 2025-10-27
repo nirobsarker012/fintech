@@ -1,9 +1,16 @@
+"use client";
 import React from "react";
+import { motion } from "motion/react";
 
 const SecurePayment = () => {
   return (
     <section className="py-[60px] xl:py-30">
-      <div className="container mx-auto">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 2, delay: 2 }}
+        className="container mx-auto"
+      >
         <div className="relative rounded-2xl overflow-hidden">
           {/* Background Image with reduced brightness */}
           <div className="absolute inset-0 bg-[url('/images/secure-payment.png')] bg-center bg-no-repeat bg-cover brightness-35"></div>
@@ -28,7 +35,7 @@ const SecurePayment = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

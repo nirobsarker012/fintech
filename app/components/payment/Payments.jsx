@@ -1,19 +1,27 @@
+"use client";
 import useData from "@/app/data/useData";
 import Image from "next/image";
 import React from "react";
-
+import { motion } from "motion/react";
+import { fedup } from "../Animation/Animation";
 const Payments = () => {
   const { paymentData } = useData();
   return (
     <section className="container mt-[60px] lg:mt-[120px]">
-      <div className="flex flex-col text-center items-center justify-center px-4">
+      <motion.div
+        variants={fedup(0.2)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+        className="flex flex-col text-center items-center justify-center px-4"
+      >
         <span className="text-secondary uppercase text-[16px] font-semibold font-outfit">
           Features
         </span>
         <h1 className="font-bold font-urbanist text-primary text-[28px] sm:text-[32px] md:text-[40px] max-w-[700px] leading-tight">
           Why choose Easy Pay for effortless payments?
         </h1>
-      </div>
+      </motion.div>
 
       {/* Payments Items Start */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 justify-between items-stretch py-12 px-4 md:px-[72px]">

@@ -1,10 +1,18 @@
+"use client";
 import React from "react";
 import SecurityBox from "./SecurityBox";
-
+import { motion } from "motion/react";
+import { fadeLeft } from "../Animation/Animation";
 const Security = () => {
   return (
     <section className="py-[60px] lg:py-30">
-      <div className="container">
+      <motion.div
+        variants={fadeLeft(0.3)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+        className="container"
+      >
         <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end gap-y-6 lg:gap-y-0 mb-8 md:mb-12">
           <div className="max-w-2xl">
             <span className="text-secondary uppercase text-sm sm:text-base font-semibold font-outfit">
@@ -22,7 +30,7 @@ const Security = () => {
         </div>
         {/* SecurityBox   */}
         <SecurityBox />
-      </div>
+      </motion.div>
     </section>
   );
 };
