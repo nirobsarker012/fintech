@@ -92,14 +92,14 @@ const Hero = () => {
         <div className="bg-white rounded-lg p-4 flex items-center gap-x-2 absolute top-1/2 right-10 md:top-60 md:right-20 transform translate-y-[-50%] md:translate-y-0 shadow-md">
           <div className="flex items-center">
             <Image
-              src={"/images/user-3.png"}
+              src={"/images/user-1.jpg"}
               width={40}
               height={40}
               alt="user-1"
               className="rounded-full border-2 border-white"
             />
             <Image
-              src={"/images/user-3.png"}
+              src={"/images/user-2.jpg"}
               width={40}
               height={40}
               alt="user-2"
