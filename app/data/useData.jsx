@@ -217,7 +217,7 @@ const priceCardData = [
 ];
 
 // Footer Data
-const footerData = [
+const footerShortLinksData = [
   {
     id: 1,
     title: "Short links",
@@ -236,8 +236,11 @@ const footerData = [
       },
     ],
   },
+];
+
+const footerOtherPageData = [
   {
-    id: 2,
+    id: 1,
     title: "Other pages",
     metaLink: [
       {
@@ -261,6 +264,8 @@ const useData = () => {
     paymentwayData,
     securityBoxData,
     priceCardData,
+    footerShortLinksData,
+    footerOtherPageData,
   };
 };
 

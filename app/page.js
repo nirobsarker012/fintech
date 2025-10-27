@@ -1,3 +1,4 @@
+import Footer from "./components/Footer/Footer";
 import Hero from "./components/Hero/Hero";
 import OnMarques from "./components/marquee/OnMarques";
 import Navbar from "./components/Navbar/Navbar";
@@ -29,8 +30,10 @@ export default function Home() {
       <Security />
       {/* Pricing Section */}
       <Price />
-      {/* Payment Secure */}
+      {/* Payment Secure Sections */}
       <SecurePayment />
+      {/* Footer Section */}
+      <Footer />
     </>
   );
 }
