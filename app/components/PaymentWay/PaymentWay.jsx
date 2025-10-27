@@ -17,7 +17,7 @@ const PaymentWay = () => {
             </h1>
           </div>
           {/* Button */}
-          <button className="bg-btn-primary-color text-white font-semibold text-sm sm:text-base py-3 px-6 rounded-full cursor-pointer hover:bg-black transition-all duration-500">
+          <button className="bg-btn-primary-color text-white font-semibold text-sm sm:text-base py-4 px-6 rounded-full cursor-pointer hover:bg-black transition-all duration-500">
             Get Started Now
           </button>
         </div>

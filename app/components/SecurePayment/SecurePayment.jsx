@@ -19,10 +19,10 @@ const SecurePayment = () => {
               keeping your transactions secure!
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center sm:space-x-3 mt-10">
-              <button className="bg-btn-primary-color text-white font-semibold text-[16px] py-2 px-6 rounded-full cursor-pointer hover:bg-black hover:text-white transition-all duration-500 block leading-[150%]">
+              <button className="bg-btn-primary-color text-white font-semibold text-[16px] py-4 px-6 rounded-full cursor-pointer hover:bg-black hover:text-white transition-all duration-500 block leading-[150%]">
                 Download the App
               </button>
-              <button className="hover:bg-btn-primary-color hover:border hover:border-btn-primary-color border border-white text-white font-semibold text-[16px] py-2 px-6 rounded-full cursor-pointer transition-all duration-500 block leading-[150%]">
+              <button className="hover:bg-btn-primary-color hover:border hover:border-btn-primary-color border border-white text-white font-semibold text-[16px] py-4 px-6 rounded-full cursor-pointer transition-all duration-500 block leading-[150%]">
                 Contact Us
               </button>
             </div>
