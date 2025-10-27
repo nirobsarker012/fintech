@@ -18,7 +18,14 @@ const Hero = () => {
 
         {/* Hero Title */}
         <h1 className="font-bold font-urbanist text-[36px] sm:text-[48px] md:text-[64px] leading-[120%] text-primary">
-          Pay fast and smarter from anywhere
+          <span className="relative">
+            Pay fast and smarter
+            <img
+              className="inline-block absolute mt-1.5  bottom-0 right-0.5 translate-x-3"
+              src="/images/Vector.png"
+            />
+          </span>{" "}
+          from anywhere
         </h1>
 
         {/* Hero Description */}

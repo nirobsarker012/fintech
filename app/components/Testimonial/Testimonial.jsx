@@ -15,8 +15,8 @@ const Testimonial = () => {
 
   return (
     <section className="bg-[#F6F6F6] py-[60px] xl:py-30">
-      <div className="grid grid-cols-1 gap-5 md:grid-cols-2 md:items-end lg:mb-16 lg:gap-10 xl:gap-32">
-        <div className="flex flex-col xl:flex-row justify-between items-start xl:items-center container mx-auto gap-10">
+      <div className="container-overflow grid grid-cols-1 gap-5 lg:grid-cols-[4fr_5fr] md:items-end lg:mb-16 lg:gap-10 xl:gap-20">
+        <div className="flex flex-col xl:flex-row justify-between items-start xl:items-center  mx-auto gap-10">
           {/* ---------- Left Content ---------- */}
           <div className="max-w-2xl flex flex-col items-start">
             <span className="text-secondary uppercase text-sm sm:text-base font-semibold font-outfit">
@@ -76,11 +76,11 @@ const Testimonial = () => {
           </div>
         </div>
         {/* ---------- Right Slider ---------- */}
-        <div className="container-overflow">
+        <div className="relative">
           <Swiper
             modules={[Autoplay, Navigation]}
-            spaceBetween={24}
-            slidesPerView={4}
+            spaceBetween={16}
+            slidesPerView={1.1}
             autoplay={{
               delay: 3000,
               disableOnInteraction: false,
@@ -95,11 +95,9 @@ const Testimonial = () => {
               swiper.params.navigation.nextEl = nextRef.current;
             }}
             breakpoints={{
-              320: { slidesPerView: 1, spaceBetween: 16 },
-              640: { slidesPerView: 1.2, spaceBetween: 16 },
-              768: { slidesPerView: 2, spaceBetween: 20 },
-              1024: { slidesPerView: 2, spaceBetween: 24 },
-              1280: { slidesPerView: 2, spaceBetween: 24 },
+              640: { slidesPerView: 1.3, spaceBetween: 16 },
+              768: { slidesPerView: "auto", spaceBetween: 20 },
+              1024: { slidesPerView: "auto", spaceBetween: 24 },
             }}
           >
             {testimonialData.map((data) => (
@@ -136,6 +134,7 @@ const Testimonial = () => {
               </SwiperSlide>
             ))}
           </Swiper>
+          <div className="bg-[#cd9bff] w-[200px] h-[200px] blur-[100px] absolute top-[40%] translate-x-42"></div>
         </div>
       </div>
     </section>
