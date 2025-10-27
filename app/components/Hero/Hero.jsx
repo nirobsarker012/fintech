@@ -1,9 +1,15 @@
+"use client";
 import Image from "next/image";
 import React from "react";
-
+import { motion } from "motion/react";
 const Hero = () => {
   return (
-    <main className="container mx-auto grid grid-cols-1 md:grid-cols-2 justify-between items-center gap-10 py-10 md:py-20">
+    <motion.main
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1, delay: 1 }}
+      className="container mx-auto grid grid-cols-1 md:grid-cols-2 justify-between items-center gap-10 py-10 md:py-20"
+    >
       {/* Hero Content start */}
       <div className="flex flex-col gap-4 text-center md:text-left px-4 md:px-0">
         <span className="text-gray text-[16px] font-semibold font-outfit">
@@ -108,7 +114,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </main>
+    </motion.main>
   );
 };
 

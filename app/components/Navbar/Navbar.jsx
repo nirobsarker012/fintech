@@ -5,7 +5,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 import NavbarMenu from "./NavbarMenu";
-
+import { motion } from "motion/react";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -15,7 +15,12 @@ const Navbar = () => {
 
   return (
     <header>
-      <nav className="container flex justify-between items-center py-4">
+      <motion.nav
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1, delay: 0.5 }}
+        className="container flex justify-between items-center py-4"
+      >
         {/* Logo */}
         <Link className="flex items-center gap-2" href={"/"}>
           <Image
@@ -49,7 +54,7 @@ const Navbar = () => {
             {isOpen ? <FiX /> : <FiMenu />}
           </button>
         </div>
-      </nav>
+      </motion.nav>
 
       {/* Mobile Dropdown Menu */}
       {isOpen && (
