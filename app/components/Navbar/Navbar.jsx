@@ -23,10 +23,10 @@ const Navbar = () => {
         {/* Logo */}
         <Link className="flex items-center gap-2" href={"/"}>
           <Image
-            width={80}
+            width={40}
             height={73}
             alt="fintech_logo"
-            src={"/images/logo.png"}
+            src={"/images/fintech_logo.png"}
           />
           <span className="font-urbanist text-primary font-bold text-[28px]">
             Easy Pay

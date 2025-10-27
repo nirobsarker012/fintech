@@ -27,7 +27,7 @@ const SecurityBox = () => {
             {/* Colored circle */}
             <div
               style={{ background: data.blurColor }}
-              className="flex justify-center items-center w-7 h-7 rounded-full"
+              className="flex justify-center items-center w-7 h-7 rounded-full animate-blurPulse"
             >
               <span
                 style={{ background: data.color }}

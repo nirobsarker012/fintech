@@ -10,13 +10,13 @@ const Footer = () => {
     <footer className="container relative overflow-hidden">
       <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8 md:gap-0">
         {/* Logo + Description */}
-        <div className="max-w-[278px] flex-shrink-0">
+        <div className="max-w-[278px] shrink-0">
           <Link className="flex items-center gap-2" href={"/"}>
             <Image
-              width={80}
+              width={40}
               height={73}
               alt="fintech_logo"
-              src={"/images/logo.png"}
+              src={"/images/fintech_logo.png"}
             />
             <span className="font-urbanist text-primary font-bold text-[28px]">
               Easy Pay
