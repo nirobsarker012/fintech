@@ -18,7 +18,7 @@ const SecurePayment = () => {
               Start using Monks Pay today it's fast, free, and focused on
               keeping your transactions secure!
             </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center sm:space-x-3 mt-10">
+            <div className="flex flex-col gap-y-3 lg:gap-y-0 sm:flex-row items-center justify-center sm:space-x-3 mt-10">
               <button className="bg-btn-primary-color text-white font-semibold text-[16px] py-4 px-6 rounded-full cursor-pointer hover:bg-black hover:text-white transition-all duration-500 block leading-[150%]">
                 Download the App
               </button>

@@ -301,6 +301,7 @@ const useData = () => {
     priceCardData,
     footerShortLinksData,
     footerOtherPageData,
+    testimonialData,
   };
 };
 
